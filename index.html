@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML Stuff</title>
+    <meta name = "author" content = "Kevin Yee">
+    Credit to this webpage for the framework of what I'm working with:
+        https://codepen.io/andrejsharapov/pen/xBGKrr?editors=1100
+    
+        <link rel="stylesheet" href="styles.css">
+    
+        
+
+</head>
+
+<body>
+    
+  <div class="smooth">
+    <div class="header">
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#something">something</a></li>
+      </ul>
+    </div>
+    <section id="about">
+      <h1>Kevin Yee</h1>
+      <br>
+      <h2>EECS Undergraduate @ UC Berkeley</h2>
+      
+      <div class="image-grid">
+      <img class = "seal" img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png" alt = "Berkeley Seal">
+      <img class = "EECS" img src="https://pbs.twimg.com/profile_images/971496839055683585/jW1g90Ux_400x400.jpg" alt = "EECS Logo">
+      </div>
+    </section>
+    <section id="work">
+      <h2>Section work</h2>
+      <div class = "wrapper">
+        <div class = "work1"><h3>H&H Refrigeration</h3>
+        <h4>Job Description.</h4>
+        <h5>Subdescriptions</h5>
+        </div>
+        <div class = "work2"><h3>Ants vs. Somebees</h3>
+        <h4>Project Description.</h4>
+        <h5>Subdescriptions</h5>
+        </div>
+        <div class = "work3"><h3>Scheme Interpreter</h3>
+        <h4>Project Description.</h4>
+        <h5>Subdescriptions</h5>
+        </div>
+        
+
+
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class = "grid-container">
+        <a target = "_blank" href = "https://www.linkedin.com/in/kevinsyee"><img class = "linkedin" img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt = "LinkedIn Logo"></a>
+        <a target = "_blank" href = "mailto:kevinsyee@berkeley.edu"><img class = "mail" img src = "https://cdn-icons-png.flaticon.com/512/2989/2989993.png" alt = "Mail Icon"></a>
+        
+        
+        <h3><div><a target="_blank" href="https://www.linkedin.com/in/kevinsyee">Kevin Yee</a></div><h3>
+
+
+      </div>
+    </section>
+    <section id="something">
+      <h2>Section something</h2>
+      <button type="button">This button does nothing.</button> 
+    </section>
+
+    <section id="bottom">
+        <h5>This website is a work in progress.</h5>
+        <h6>It will probably be changing a lot as life happens.</h6>
+        <title>Quirky Form Example</title>
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const input = document.getElementById('quirky-input');
+      alert(`You entered: ${input.value.toUpperCase()}!`);
+      input.value = '';
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Knowlege Stopgap</h1>
+  <form onsubmit="handleFormSubmit(event)">
+    <label for="quirky-input">Enter something:</label>
+    <input type="text" id="quirky-input" name="quirky-input">
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+    </section>
+  </div>
+</body>
